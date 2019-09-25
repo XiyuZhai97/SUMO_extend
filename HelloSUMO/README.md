@@ -1,8 +1,4 @@
-# COHAV (SUMO Based)
-
-## Build a city that only have autonomous vehicles 
-
-## Setup SUMO 1.1 https://sumo.dlr.de/docs/Installing/Linux_Build.html
+# Setup SUMO 1.1 https://sumo.dlr.de/docs/Installing/Linux_Build.html
 
 ### Build
      sudo apt-get install cmake python g++ libxerces-c-dev libfox-1.6-dev libgdal-dev libproj-dev libgl2ps-dev swig
