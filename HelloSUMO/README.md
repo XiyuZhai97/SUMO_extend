@@ -60,6 +60,8 @@
 	netconvert --node-files=example.nod.xml --edge-files=example.edg.xml --output-file=hello.net.xml
 Now you can see the crossing road in sumo-gui by open network: hello.net.xml
 
+**Never attempt to modify the junction logic within a .net.xml file manually as there are subtle inter-dependencies with other data structures in the network.**
+
 ### Generate random vehicles https://sumo.dlr.de/docs/Tools/Trip.html
 	$SUMO_HOME/tools/randomTrips.py -n hello.net.xml -e 50
   The option --seed <INT> can be used to get repeatable pseudo-randomness.
