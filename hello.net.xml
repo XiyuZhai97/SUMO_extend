@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on Sun Sep 22 08:20:08 2019 by Eclipse SUMO netconvert Version 1.1.0
+<!-- generated on Wed Sep 25 15:47:28 2019 by Eclipse SUMO netconvert Version 1.1.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
         <node-files value="example.nod.xml"/>
         <edge-files value="example.edg.xml"/>
     </input>
+
+    <output>
+        <output-file value="hello.net.xml"/>
+    </output>
 
 </configuration>
 -->
