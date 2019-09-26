@@ -1,0 +1,30 @@
+<edges>
+
+<!--   <edge id="1fi" from="1" to="m1" priority="2" numLanes="2" speed="11.11"/> 
+  <edge id="1si" from="m1" to="0" priority="3" numLanes="3" speed="13.89"/> -->
+
+  <edge id="lt1" from="left" to="top" priority="1" numLanes="2" shape="-30,0 -25.96,15 -21.213,21.213 -15,25.96 0,30"/>
+  
+
+  <edge id="rt1" from="top" to="right" priority="1" numLanes="2" shape="0,30 15,25.96 21.213,21.213 25.96,15 30,0"/>
+
+  <edge id="rb1" from="right" to="bottom" priority="1" numLanes="2" shape="30,0 25.96,-15 21.213,-21.213 15,-25.96 0,-30"/>
+
+  <edge id="lb1" from="bottom" to="left" priority="1" numLanes="2" shape="0,-30 -15,-25.96 -21.213,-21.213 -25.96,-15 -30,0"/>
+  
+  <roundabout edges="lt1 rt1 rb1 lb1"/>
+
+  <edge id="ll1" from="left" to="leftl" priority="1" numLanes="2"/>
+  <edge id="ll2" from="leftl" to="left" priority="1" numLanes="2"/>
+
+  <edge id="tt1" from="topt" to="top" priority="1" numLanes="2"/>
+  <edge id="tt2" from="top" to="topt" priority="1" numLanes="2"/>
+
+  <edge id="rr1" from="right" to="rightr" priority="1" numLanes="2"/>
+  <edge id="rr2" from="rightr" to="right" priority="1" numLanes="2"/>
+
+  <edge id="bb1" from="bottomb" to="bottom" priority="1" numLanes="2"/>
+  <edge id="bb2" from="bottom" to="bottomb" priority="1" numLanes="2"/>
+
+
+</edges>

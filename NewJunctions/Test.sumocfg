@@ -1,6 +1,6 @@
 <configuration>
     <input>
-        <net-file value="T-junction.net.xml"/>
+        <net-file value="Roundabout4.net.xml"/>
         <route-files value="trips.trips.xml"/>
     </input>
     <time>

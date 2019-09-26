@@ -1,0 +1,14 @@
+<connections>
+	<connection from="ll2" to="lt1" fromLane="0" toLane="0"/>
+	<!-- <connection from="ll2" to="lt1" fromLane="1" toLane="0"/> -->
+
+	<connection from="tt1" to="rt1" fromLane="0" toLane="0"/>
+	<connection from="tt1" to="rt1" fromLane="1" toLane="0"/>
+
+	<connection from="rr2" to="rb1" fromLane="0" toLane="0"/>
+	<connection from="rr2" to="rb1" fromLane="1" toLane="0"/>
+
+	<connection from="bb1" to="lb1" fromLane="0" toLane="0"/>
+	<connection from="bb1" to="lb1" fromLane="1" toLane="0"/>
+
+</connections>

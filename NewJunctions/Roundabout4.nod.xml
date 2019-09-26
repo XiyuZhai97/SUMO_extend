@@ -1,0 +1,13 @@
+<nodes> <!-- The opening tag -->
+
+  <!-- <node id="0" x="0.0" y="0.0" type="traffic_light"/> --> <!-- def. of node "0" -->
+  <node id="left" x="-30.0" y="0.0" type="priority"/> <!-- def. of node "1" -->
+  <node id="right" x="+30.0" y="0.0" type="priority"/> <!-- def. of node "2" -->
+  <node id="bottom" x="0.0" y="-30.0" type="priority"/> <!-- def. of node "3" -->
+  <node id="top" x="0.0" y="+30.0" type="priority"/> <!-- def. of node "3" -->
+
+  <node id="leftl" x="-100.0" y="0.0" type="priority"/> <!-- def. of node "1" -->
+  <node id="rightr" x="+100.0" y="0.0" type="priority"/> <!-- def. of node "2" -->
+  <node id="bottomb" x="0.0" y="-100.0" type="priority"/> <!-- def. of node "3" -->
+  <node id="topt" x="0.0" y="+100.0" type="priority"/> <!-- def. of node "3" -->
+</nodes> <!-- The closing tag -->
