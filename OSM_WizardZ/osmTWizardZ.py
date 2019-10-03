@@ -137,8 +137,7 @@ class Builder(object):
 
         self.tmp = None
         if local:
-            now = data.get("testOutputDir",
-                           datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S"))
+            now = data.get("testOutputDir") + datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
             for base in ['', os.path.expanduser('~/Sumo')]:
                 try:
                     self.tmp = os.path.abspath(os.path.join(base, now))
@@ -477,14 +476,12 @@ if __name__ == "__main__":
     # OSMImporterWebSocket.local = args.testOutputDir is not None or not args.remote
     # if args.remote:
     query = args.city
+    print(query)
     url = "https://nominatim.openstreetmap.org/search?q=" + query + "&format=json&polygon=0&addressdetails=0&limit=1&callback"
     r = urllib.request.urlopen(url)
     rr = r.read()
     charset = chardet.detect(rr)
-    print(charset)
     rr = rr.decode(charset['encoding'])
-    print(type(rr))
-
     s = json.loads(rr[1:-1])
     print(s)
     print(s['boundingbox']) # return south, north, west, east
@@ -495,8 +492,9 @@ if __name__ == "__main__":
     builder = Builder(data,True)
     # builder.report = self.report
     builder.build()
-    builder.makeConfigFile()
-    builder.createBatch()
+    print("build Complete")
+    # builder.makeConfigFile()
+    # builder.createBatch()
     builder.openSUMO()
         # data = {u'duration': 900,
         #         u'vehicles': {u'passenger': {u'count': 6, u'fringeFactor': 5},
